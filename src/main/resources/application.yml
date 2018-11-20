@@ -1,0 +1,23 @@
+server:
+  port: 8002
+  context-path: /sell
+spring:
+  application:
+    name: selling_server
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/selling
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+#logging:
+#  pattern:
+#   console: "%d - %msg%n"
+# path: D:/log/selling/
+#  file: D:/log/selling/selling.log
+#  level: debug
